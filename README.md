@@ -1,5 +1,12 @@
 # Linux configuration
 
+## Gnome
+
+Disable the `Super` key from showing `Activities`. I'm using `Super + Space` for that. 
+```
+gsettings set org.gnome.mutter overlay-key ''
+```
+
 ## Chrome
 I use [Shortkeys](https://chrome.google.com/webstore/detail/shortkeys-custom-keyboard/logpjaacgmcbpdkdchjiaagddngobkck) to configure tab next/prev shortcuts and to remap ctrl+shift+c from opening Dev Tools to copy to clipboard.
 The tab shortcuts are configured from [chrome://extensions/shortcuts](chrome://extensions/shortcuts).  
