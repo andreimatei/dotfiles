@@ -1,0 +1,39 @@
+314,321d313
+<     type "TWO_LEVEL_PRESERVE" {
+<         modifiers= Shift+Super;
+<         map[Super]= Level2;
+<         map[Shift+Super]= Level3;
+<         preserve[Shift]= Shift;
+<         level_name[Level1]= "Base";
+<         level_name[Level2]= "Shift";
+<     };
+1428,1432c1420
+<     key <UP>  {
+<         type[Group1] = "TWO_LEVEL_PRESERVE",
+<         symbols[Group1] = [    Up,   Prior, NoSymbol ],
+<         actions[Group1]=[ NoAction(), RedirectKey(key=<PGUP>,clearmods=Super), RedirectKey(key=<PGUP>,clearmods=Super)]
+<     };
+---
+>     key   <UP> {         [              Up ] };
+1434,1443c1422,1423
+<     key <LEFT>  {
+<         type[Group1] = "TWO_LEVEL_PRESERVE",
+<         symbols[Group1] = [    Left,   Home, NoSymbol, Home, Home      ],
+<         actions[Group1]=[ NoAction(), RedirectKey(key=<HOME>,clearmods=Super), RedirectKey(key=<HOME>,clearmods=Super)]
+<     };
+<     key <RGHT>  {
+<         type[Group1] = "TWO_LEVEL_PRESERVE",
+<         symbols[Group1] = [    Right,  NoSymbol, NoSymbol ],
+<         actions[Group1]=[ NoAction(), RedirectKey(key=<END>,clearmods=Super), RedirectKey(key=<END>,clearmods=Super)]
+<     };
+---
+>     key <LEFT> {         [            Left ] };
+>     key <RGHT> {         [           Right ] };
+1445,1449c1425
+<     key <DOWN>  {
+<         type[Group1] = "TWO_LEVEL_PRESERVE",
+<         symbols[Group1] = [    Down,   NoSymbol, NoSymbol ],
+<         actions[Group1]=[ NoAction(), RedirectKey(key=<PGDN>,clearmods=Super), RedirectKey(key=<PGDN>,clearmods=Super)]
+<     };
+---
+>     key <DOWN> {         [            Down ] };
