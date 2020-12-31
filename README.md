@@ -7,6 +7,13 @@ Disable the `Super` key from showing `Activities`. I'm using `Super + Space` for
 gsettings set org.gnome.mutter overlay-key ''
 ```
 
+I'm using customized keyboard shortcut for:
+- `Switch applications`
+- `Switch windows of an app directly`
+- `Show the activities overview`
+- `View split on left` / `View split on right`
+- `Toggle maximization state`
+
 ## Chrome
 I use [Shortkeys](https://chrome.google.com/webstore/detail/shortkeys-custom-keyboard/logpjaacgmcbpdkdchjiaagddngobkck) to configure tab next/prev shortcuts and to remap ctrl+shift+c from opening Dev Tools to copy to clipboard.
 The tab shortcuts are configured from [chrome://extensions/shortcuts](chrome://extensions/shortcuts).  
