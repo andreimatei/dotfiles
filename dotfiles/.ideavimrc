@@ -1,0 +1,5 @@
+source ~/.vimrc
+
+set incsearch
+map gq :action com.andrewbrookins.idea.wrap.WrapAction<CR>
+set ideajoin
