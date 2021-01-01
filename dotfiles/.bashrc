@@ -1,5 +1,8 @@
-bind '"\e[A":history-search-backward'
-bind '"\e[B":history-search-forward'
+if [ -t 1 ]
+then
+  bind '"\e[A":history-search-backward'
+  bind '"\e[B":history-search-forward'
+fi
 
 alias g="git"
 alias gca="git commit -a -m"
