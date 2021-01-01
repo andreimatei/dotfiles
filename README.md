@@ -29,8 +29,12 @@ These are part of the dconf backup.
 
 ### Custom key map for Dell XPS laptop
 
-I've made Gnome load a custom key map on session startup. See `xkbmap-arrows-dell{.diff}`.
-To load it on startup, I've added a startup app with `gnome-session-properties`: `xkbcomp /home/andrei/dotfiles/config/xkbmap-arrows-dell ":0"`.
+I've made Gnome load a custom key map on session startup. See
+`xkbmap-arrows-dell{.diff}`.  
+To load it on startup, I've added a startup app with
+`gnome-session-properties`: `xkbcomp
+/home/andrei/dotfiles/config/xkbmap-arrows-dell ":0"`. This is what
+`xkbcomp.desktop`, which needs to be symlinked in `.config/autostart`.
 
 ## Chrome
 I use [Shortkeys](https://chrome.google.com/webstore/detail/shortkeys-custom-keyboard/logpjaacgmcbpdkdchjiaagddngobkck) to configure tab next/prev shortcuts and to remap ctrl+shift+c from opening Dev Tools to copy to clipboard.
