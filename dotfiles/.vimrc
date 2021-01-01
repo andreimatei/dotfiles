@@ -31,6 +31,11 @@ Plugin 'RRethy/vim-illuminate'
 Plugin 'irfansharif/vim-crlfmt'
 " Open line(s) in GitHub with <leader>gh
 Plugin 'ruanyl/vim-gh-line'
+" Control the font size in GVim.
+Plugin 'drmikehenry/vim-fontsize'
+" Map + and _ (Shift + '-') to increase and decrease the font size.
+nmap <silent> + <Plug>FontsizeInc
+nmap <silent> _ <Plug>FontsizeDec
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -193,7 +198,3 @@ vmap <C-c> "+yi
 vmap <C-x> "+c
 vmap <C-v> c<ESC>"+p
 imap <C-v> <C-r><C-o>+
-
-if has("gui_running")
-"  set guifont=Monaco:h12
-endif
