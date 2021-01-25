@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec=xkbcomp /home/andrei/dotfiles/config/xkbmap-arrows-dell ":0"
+Exec=xkbcomp /home/andrei/dotfiles/config/linux/xkbmap-arrows-dell ":0"
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true

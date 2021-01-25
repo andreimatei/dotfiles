@@ -32,14 +32,7 @@ source ~/Dropbox/workstation\ backup/scripts/git-completion.sh
 
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
 
-# The next line updates PATH for the Google Cloud SDK.
-source '/Users/andrei/google-cloud-sdk/path.bash.inc'
-
-# The next line enables shell command completion for gcloud.
-source '/Users/andrei/google-cloud-sdk/completion.bash.inc'
-
-
-export GOOGLE_CREDENTIALS=$(cat ~/Dropbox/workstation\ backup/scripts/cockroach-andrei-d6adabdd6395.json)
+export GOOGLE_CREDENTIALS=$(cat ~/Dropbox/secrets/cockroach-andrei-d6adabdd6395.json)
 export GOOGLE_PROJECT="cockroach-andrei"
 
 #export GOPATH=/home/andrei/work
