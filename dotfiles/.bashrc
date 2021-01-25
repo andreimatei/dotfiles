@@ -51,6 +51,9 @@ export MACOSX_DEPLOYMENT_TARGET=10.13
 
 export COCKROACH_DEV_LICENSE='crl-0-EJL04ukFGAEiI0NvY2tyb2FjaCBMYWJzIC0gUHJvZHVjdGlvbiBUZXN0aW5n'
 
+# Bash completion for git.
+source ~/dotfiles/scripts/git-completion.bash
+
 # Get bash completion for roachprod.
 source ~/.roachprod/bash-completion.sh
 
