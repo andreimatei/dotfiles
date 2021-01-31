@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/andrei/.oh-my-zsh"
+export ZSH="$HOME/src/oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -105,4 +105,4 @@ source $ZSH/oh-my-zsh.sh
 
 # Use liquidprompt for the prompt. I like seeing the number of changed lines
 # and I don't think anything in Oh My Zsh can do that.
-source ~/work/src/github.com/nojhan/liquidprompt/liquidprompt
+source ~/src/liquidprompt/liquidprompt
