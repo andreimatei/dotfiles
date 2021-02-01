@@ -4,12 +4,17 @@ set -eux
 mkdir -p ~/src
 
 # Clone dotfiles.
+# !!! don't fail if dir already exists
 git clone https://github.com/andreimatei/dotfiles.git ~/dotfiles
 
 # Create symlinks to all the dotfiles.
-for filename in ~/dotfiles/dotfiles; do
+for filename in $(find ~/dotfiles/dotfiles -type f -printf "%f "); do
+  echo "installing $filename"
+  # !!! make backup copies
   ln -s -f ~/dotfiles/dotfiles/$filename ~/$filename
 done
+
+sudo apt install zsh
 
 # Install Liquidprompt.
 git clone --branch stable https://github.com/nojhan/liquidprompt.git ~/src/liquidprompt
