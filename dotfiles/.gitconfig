@@ -21,6 +21,8 @@
 [help]
 	autocorrect = 1
 [core]
-	excludesfile = /Users/andrei/.gitignore
+	excludesfile = ~/.gitignore
 [rebase]
 	autoSquash = true
+[cockroachdb]
+	disable-commit-template = true

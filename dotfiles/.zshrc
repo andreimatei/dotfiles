@@ -106,3 +106,6 @@ source $ZSH/oh-my-zsh.sh
 # Use liquidprompt for the prompt. I like seeing the number of changed lines
 # and I don't think anything in Oh My Zsh can do that.
 source ~/src/liquidprompt/liquidprompt
+
+export PATH=$HOME/goroot/bin:$PATH
+
