@@ -40,7 +40,7 @@ export PATH=$PATH:/home/andrei/work/src/github.com/golang/go/bin:/home/andrei/wo
 
 # source $(brew --prefix autoenv)/activate.sh
 
-source ~/work/src/github.com/nojhan/liquidprompt/liquidprompt  
+source ~/src/liquidprompt/liquidprompt  
 # Put ccache in the path so that rocksdb compilation across versions is accelerated.
 export PATH=/usr/bin/ccache:/usr/lib/ccache:$PATH
 
