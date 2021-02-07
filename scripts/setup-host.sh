@@ -38,8 +38,7 @@ ZSH=~/src/oh-my-zsh RUNZSH=no KEEP_ZSHRC=yes sh -c "$(curl -fsSL https://raw.git
 # Install zsh-autosuggestions as a oh-my-zsh plugin.
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/src/oh-my-zsh/custom/plugins/zsh-autosuggestions
 
-# !!!
-# dconf load / < config/linux/dconf.backup
+dconf load / < ~/dotfiles/config/linux/dconf.backup
 
 # Start zsh.
 zsh --login

@@ -14,7 +14,18 @@ I'm using customized keyboard shortcut for:
 - `View split on left` / `View split on right`
 - `Toggle maximization state`
 
-Multiple shortcuts can be assigned to the same action, but not through the Gnome UI. You have to use `dconf-editor`. Some of the interesting key bindings are under `/org/gnome/desktop/wm/keybindings`.
+Multiple shortcuts can be assigned to the same action, but not through the
+Gnome UI. You have to use `dconf-editor`. Some of the interesting key bindings
+are under `/org/gnome/desktop/wm/keybindings`.
+
+To create dconf dumps:
+```sh
+dconf dump / > config/linux/dconf.backup
+```
+To load the dump:
+```sh
+dconf load / < config/linux/dconf.backup
+```
 
 ### App-launching shortcuts
 
