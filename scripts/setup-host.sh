@@ -60,7 +60,8 @@ sudo apt install zsh
 chsh -s /usr/bin/zsh
 
 # Install Liquidprompt.
-clone_or_pull https://github.com/nojhan/liquidprompt.git ~/src/liquidprompt stable
+# I'm cloning v1.12 instead of the `stable` branch because of https://github.com/nojhan/liquidprompt/issues/658.
+clone_or_pull https://github.com/nojhan/liquidprompt.git ~/src/liquidprompt v1.12.0
 
 # Install Oh My Zsh.
 ZSH=~/src/oh-my-zsh RUNZSH=no KEEP_ZSHRC=yes sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || true
