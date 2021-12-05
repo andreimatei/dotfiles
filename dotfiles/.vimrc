@@ -72,6 +72,9 @@ set expandtab
 map .h :noh<CR>" dupa ce caut ceva, sa apas ".h" si sa dispara highlight-ul
 set showtabline=2
 
+" Use the system clipboard.
+set clipboard=unnamedplus
+
 " Removes trailing spaces
 " function TrimWhiteSpace()
 " : %s/\s\+$//
