@@ -12,7 +12,7 @@
 [merge]
 	tool = p4mergetool
 [mergetool "p4mergetool"]
-	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $PWD/$BASE $PWD/$REMOTE $PWD/$LOCAL $PWD/$MERGED
+	cmd = /home/andrei/p4v-2020.1/bin/p4merge
 	trustExitCode = false
 [mergetool]
 	keepBackup = false
@@ -27,3 +27,5 @@
 	autoSquash = true
 [cockroachdb]
 	disable-commit-template = true
+[pull]
+	ff = only

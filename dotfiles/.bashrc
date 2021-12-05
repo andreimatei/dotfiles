@@ -60,3 +60,4 @@ source ~/.roachprod/bash-completion.sh
 # direnv per-dir GOPATH
 eval "$(direnv hook bash)"
 alias config='/usr/bin/git --git-dir=/home/andrei/.cfg/ --work-tree=/home/andrei'
+. "$HOME/.cargo/env"

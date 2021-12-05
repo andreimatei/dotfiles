@@ -4,3 +4,4 @@ pkg/sql/txnstatetransitions_diagram.png
 .vimrc
 .idea
 *.config
+.envrc

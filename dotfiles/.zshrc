@@ -109,3 +109,5 @@ source ~/src/liquidprompt/liquidprompt
 
 export PATH=$HOME/goroot/bin:$PATH
 
+eval "$(direnv hook zsh)"
+
