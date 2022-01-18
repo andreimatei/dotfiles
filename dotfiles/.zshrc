@@ -107,7 +107,7 @@ source $ZSH/oh-my-zsh.sh
 # and I don't think anything in Oh My Zsh can do that.
 source ~/src/liquidprompt/liquidprompt
 
-export PATH=$HOME/goroot/bin:$PATH
+export PATH=$HOME/work/bin:$HOME/goroot/bin:$PATH
 
 eval "$(direnv hook zsh)"
 
