@@ -1,0 +1,54 @@
+[
+  {
+    "key": "ctrl+shift+c",
+    "label": "inhibit opening dev tools",
+    "action": "javascript",
+    "sites": "",
+    "sitesArray": [
+      ""
+    ],
+    "code": "document.execCommand('copy')",
+    "activeInInputs": false,
+    "blacklist": false
+  },
+  {
+    "action": "prevtab",
+    "key": "shift+left",
+    "sites": "",
+    "sitesArray": [
+      ""
+    ]
+  },
+  {
+    "key": "shift+right",
+    "action": "nexttab",
+    "sites": "",
+    "sitesArray": [
+      ""
+    ]
+  },
+  {
+    "key": "ctrl+shift+left",
+    "action": "movetableft",
+    "sites": "",
+    "sitesArray": [
+      ""
+    ]
+  },
+  {
+    "key": "ctrl+shift+right",
+    "action": "movetabright",
+    "sites": "",
+    "sitesArray": [
+      ""
+    ]
+  },
+  {
+    "key": "ctrl+d",
+    "action": "clonetab",
+    "sites": "",
+    "sitesArray": [
+      ""
+    ]
+  }
+]
