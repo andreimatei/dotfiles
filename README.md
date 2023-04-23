@@ -29,7 +29,7 @@ dconf load / < config/linux/dconf.backup
 
 ### App-launching shortcuts
 
-These are part of the dconf backup.
+These are part of the dconf backup. They are also accessible in the Settings UI under Keyboard Shortcuts -> Custom Shortcuts.
 
 - Launch/focus on Chrome: `Super+Alt+C` - `~/dotfiles/scripts/win_focus.sh chrome /opt/google/chrome/chrome`
 - Launch/focus on Konsole: `Super+Alt+Enter` - `~/dotfiles/scripts/win_focus.sh konsole konsole`
@@ -37,6 +37,8 @@ These are part of the dconf backup.
 - Focus on Gvim: `Super+Alt+/` - `~/dotfiles/scripts/win_focus.sh Gvim`
 - Launch/focus on Slack: `Super+Alt+Enter` - `~/dotfiles/scripts/win_focus.sh Slack slack`
 - Launch/focus on Atom: `Super+Alt+a` - `~/dotfiles/scripts/win_focus.sh Atom atom`
+
+On Ubuntu 23.04 some of these shortcuts broke - e.g. the one for Konsole. `wmctrl -l` doesn't list all the windows any more; perhaps it broke because Konsole was transitioned from X to Wayland. I've found (this Gnome extention)[https://extensions.gnome.org/extension/5021/activate-window-by-title/] which works, so I've transitioned some of the commands to use it.
 
 ### Custom key map for Dell XPS laptop
 
