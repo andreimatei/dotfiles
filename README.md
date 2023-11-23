@@ -55,3 +55,9 @@ The tab shortcuts are configured from [chrome://extensions/shortcuts](chrome://e
 `Ctrl+Shift+c` is configured as described [here](https://askubuntu.com/questions/604434/chrome-disable-or-change-keyboard-shortcut-ctrlshiftc-developer-tools-console/991632#991632?newreg=9711ffc8ba2b4e349e87efa4b2fd3542).
 I have exported all the shortcuts in `extra/shortkeys-export.txt`
 
+# Framework laptop
+
+The screen resolution on the Framework is high, so I want to use "fractional scaling" in Gnome. When using Wayland, some applications look good under fractional scaling, but for X11 applications the text looks blury. Chrome and Electron applications are using X11 by default (Chrome, VS Code, Slack). I've managed to switch Chrome and VS Code, but not Slack:
+- Chrome: go to chrome://flags and switch `Preferred Ozone platform` from `Default` to `auto`.
+- VS Code: it needs to be started with `--enable-features=UseOzonePlatform --ozone-platform=wayland --enable-features=WaylandWindowDecorations`. To add these args to the link in the dock, I edited `/usr/share/applications/code.desktop`.
+
