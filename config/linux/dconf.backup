@@ -1,7 +1,7 @@
 [apps/update-manager]
 first-run=false
-launch-count=65
-launch-time=int64 1612737212
+launch-count=66
+launch-time=int64 1700846465
 show-details=true
 window-height=709
 window-width=670
@@ -14,7 +14,7 @@ window-is-maximized=false
 window-width=540
 
 [com/ubuntu/update-notifier]
-release-check-time=uint32 1612115832
+release-check-time=uint32 1700756214
 
 [desktop/ibus/general]
 preload-engines=['xkb:us::eng']
@@ -33,6 +33,7 @@ window-state=87168
 
 [org/gnome/control-center]
 last-panel='keyboard'
+window-state=(980, 640, false)
 
 [org/gnome/deja-dup]
 backend='google'
@@ -71,6 +72,11 @@ mag-factor=13.0
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'Sundry', 'YaST']
 
+[org/gnome/desktop/app-folders/folders/Pardus]
+categories=['X-Pardus-Apps']
+name='X-Pardus-Apps.directory'
+translate=true
+
 [org/gnome/desktop/app-folders/folders/Sundry]
 apps=['alacarte.desktop', 'authconfig.desktop', 'ca.desrt.dconf-editor.desktop', 'fedora-release-notes.desktop', 'firewall-config.desktop', 'flash-player-properties.desktop', 'gconf-editor.desktop', 'gnome-abrt.desktop', 'gnome-power-statistics.desktop', 'ibus-setup-anthy.desktop', 'ibus-setup.desktop', 'ibus-setup-hangul.desktop', 'ibus-setup-libbopomofo.desktop', 'ibus-setup-libpinyin.desktop', 'ibus-setup-m17n.desktop', 'ibus-setup-typing-booster.desktop', 'im-chooser.desktop', 'itweb-settings.desktop', 'jhbuild.desktop', 'javaws.desktop', 'java-1.7.0-openjdk-jconsole.desktop', 'java-1.7.0-openjdk-policytool.desktop', 'log4j-chainsaw.desktop', 'log4j-logfactor5.desktop', 'nm-connection-editor.desktop', 'orca.desktop', 'setroubleshoot.desktop', 'system-config-date.desktop', 'system-config-firewall.desktop', 'system-config-keyboard.desktop', 'system-config-language.desktop', 'system-config-printer.desktop', 'system-config-users.desktop', 'vino-preferences.desktop']
 categories=['X-GNOME-Sundry']
@@ -100,13 +106,14 @@ xkb-options=@as []
 clock-show-seconds=false
 clock-show-weekday=false
 enable-hot-corners=false
+font-hinting='slight'
 gtk-im-module='gtk-im-context-simple'
 gtk-theme='Yaru'
 show-battery-percentage=true
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['update-manager', 'org-gnome-nautilus', 'org-gnome-software', 'gnome-control-center', 'org-gnome-terminal', 'spotify-spotify', 'goland-goland', 'slack', 'gnome-power-panel', 'google-chrome', 'apport-gtk', 'gnome-network-panel', 'org-gnome-gedit', 'autokey-gtk', 'skype-skypeforlinux', 'org-qbittorrent-qbittorrent', 'xchat', 'org-gnome-polari', 'org-gnome-shell-portalhelper', 'org-gnome-tweaks', 'ca-desrt-dconf-editor', 'slack-slack', 'org-gnome-baobab', 'org-gnome-dejadup', 'libreoffice-writer', 'thunderbird-thunderbird', 'clion-clion', 'signal-desktop-signal-desktop', 'org-kde-konsole', 'transmission-gtk', 'vlc-vlc', 'usb-creator-gtk', 'dropbox', 'atom-atom']
+application-children=['update-manager', 'org-gnome-nautilus', 'org-gnome-software', 'gnome-control-center', 'org-gnome-terminal', 'spotify-spotify', 'goland-goland', 'slack', 'gnome-power-panel', 'google-chrome', 'apport-gtk', 'gnome-network-panel', 'org-gnome-gedit', 'autokey-gtk', 'skype-skypeforlinux', 'org-qbittorrent-qbittorrent', 'xchat', 'org-gnome-polari', 'org-gnome-shell-portalhelper', 'org-gnome-tweaks', 'ca-desrt-dconf-editor', 'slack-slack', 'org-gnome-baobab', 'org-gnome-dejadup', 'libreoffice-writer', 'thunderbird-thunderbird', 'clion-clion', 'signal-desktop-signal-desktop', 'org-kde-konsole', 'transmission-gtk', 'vlc-vlc', 'usb-creator-gtk', 'dropbox', 'atom-atom', 'io-snapcraft-sessionagent', 'org-gnome-settings', 'firefox-firefox', 'code-url-handler', 'code']
 show-banners=true
 
 [org/gnome/desktop/notifications/application/apport-gtk]
@@ -124,11 +131,23 @@ application-id='ca.desrt.dconf-editor.desktop'
 [org/gnome/desktop/notifications/application/clion-clion]
 application-id='clion_clion.desktop'
 
+[org/gnome/desktop/notifications/application/code-url-handler]
+application-id='code-url-handler.desktop'
+
+[org/gnome/desktop/notifications/application/code]
+application-id='code.desktop'
+
 [org/gnome/desktop/notifications/application/dropbox]
 application-id='dropbox.desktop'
 
+[org/gnome/desktop/notifications/application/firefox-firefox]
+application-id='firefox_firefox.desktop'
+
 [org/gnome/desktop/notifications/application/gnome-control-center]
 application-id='gnome-control-center.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-initial-setup]
+application-id='gnome-initial-setup.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-network-panel]
 application-id='gnome-network-panel.desktop'
@@ -141,6 +160,9 @@ application-id='goland_goland.desktop'
 
 [org/gnome/desktop/notifications/application/google-chrome]
 application-id='google-chrome.desktop'
+
+[org/gnome/desktop/notifications/application/io-snapcraft-sessionagent]
+application-id='io.snapcraft.SessionAgent.desktop'
 
 [org/gnome/desktop/notifications/application/libreoffice-writer]
 application-id='libreoffice-writer.desktop'
@@ -159,6 +181,9 @@ application-id='org.gnome.Nautilus.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-polari]
 application-id='org.gnome.Polari.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-settings]
+application-id='org.gnome.Settings.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-shell-portalhelper]
 application-id='org.gnome.Shell.PortalHelper.desktop'
@@ -235,9 +260,9 @@ event-sounds=true
 theme-name='__custom'
 
 [org/gnome/desktop/wm/keybindings]
-activate-window-menu=@as []
 cycle-group=['<Alt>grave', '<Super>grave']
 cycle-group-backward=['<Shift><Alt>grave']
+maximize=@as []
 panel-main-menu=['<Super>space']
 switch-applications=['<Alt>Tab', '<Super>Tab']
 switch-applications-backward=['<Shift><Alt>Tab']
@@ -249,11 +274,12 @@ switch-to-workspace-down=['<Alt>Page_Down']
 switch-to-workspace-up=['<Alt>Page_Up']
 switch-windows=@as []
 switch-windows-backward=@as []
-toggle-maximized=['<Primary><Alt>Up']
+toggle-maximized=['<Super>Up']
 
 [org/gnome/desktop/wm/preferences]
 audible-bell=false
 button-layout=':minimize,maximize,close'
+num-workspaces=2
 visual-bell=false
 visual-bell-type='frame-flash'
 
@@ -327,10 +353,11 @@ include-pointer=false
 last-save-directory='file:///home/andrei/Pictures'
 
 [org/gnome/gnome-system-monitor]
-cpu-colors=[(uint32 0, '#FF6E00'), (1, '#CB0C29'), (2, '#49A835'), (3, '#2D7DB3'), (4, '#f25915e815e8'), (5, '#f25915e815e8'), (6, '#f25915e815e8'), (7, '#f25915e815e8'), (8, '#f25915e815e8'), (9, '#f25915e815e8'), (10, '#f25915e815e8'), (11, '#f25915e815e8')]
+cpu-colors=[(uint32 0, '#FF6E00'), (1, '#CB0C29'), (2, '#49A835'), (3, '#2D7DB3'), (4, '#f25915e815e8'), (5, '#f25915e815e8'), (6, '#f25915e815e8'), (7, '#f25915e815e8'), (8, '#f25915e815e8'), (9, '#f25915e815e8'), (10, '#f25915e815e8'), (11, '#f25915e815e8'), (12, '#b2ae7999f332'), (13, '#7999f3328f33'), (14, '#f3327999877a'), (15, '#7999aaf5f332')]
 cpu-stacked-area-chart=false
 current-tab='resources'
 maximized=false
+network-total-in-bits=false
 show-dependencies=false
 show-whose-processes='all'
 update-interval=3000
@@ -356,15 +383,17 @@ x=240
 y=135
 
 [org/gnome/mutter]
-experimental-features=['x11-randr-fractional-scaling']
+dynamic-workspaces=false
+experimental-features=['x11-randr-fractional-scaling', 'scale-monitor-framebuffer']
 overlay-key=''
 
 [org/gnome/mutter/keybindings]
-toggle-tiled-left=['<Primary><Alt>Left']
-toggle-tiled-right=['<Primary><Alt>Right']
+toggle-tiled-left=['<Super>Left']
+toggle-tiled-right=['<Super>Right']
 
 [org/gnome/nautilus/preferences]
 default-folder-viewer='list-view'
+migrated-gtk-settings=true
 search-filter-time-type='last_modified'
 search-view='list-view'
 
@@ -393,47 +422,21 @@ info-stats-type='discharge-accuracy'
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=false
+night-light-last-coordinates=(40.706416251808221, -73.979290500000005)
 night-light-temperature=uint32 4700
 
 [org/gnome/settings-daemon/plugins/media-keys]
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/']
+custom-keybindings=@as []
 next=['AudioNext']
 play=['AudioPlay']
 previous=['AudioPrev']
 screenreader=@as []
 screensaver=@as []
-
-[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
-binding='<Alt><Super>c'
-command='/home/andrei/dotfiles/scripts/win-focus.sh chrome /opt/google/chrome/chrome'
-name='Focus on Chrome'
-
-[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
-binding='<Alt><Super>Return'
-command='/home/andrei/dotfiles/scripts/win-focus.sh konsole konsole'
-name='Focus on Terminal'
-
-[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
-binding='<Alt><Super>backslash'
-command='/home/andrei/dotfiles/scripts/win-focus.sh goland'
-name='Focus on Goland'
-
-[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3]
-binding='<Alt><Super>slash'
-command='/home/andrei/dotfiles/scripts/win-focus.sh Gvim'
-name='Focus on Gvim'
-
-[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4]
-binding='<Alt><Super>s'
-command='/home/andrei/dotfiles/scripts/win-focus.sh Slack slack'
-name='focus on Slack'
-
-[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5]
-binding='<Alt><Super>a'
-command='/home/andrei/dotfiles/scripts/win-focus.sh Atom atom'
-name='Focus on Atom'
+search=['<Super>space']
 
 [org/gnome/settings-daemon/plugins/power]
+ambient-enabled=false
+idle-dim=true
 sleep-inactive-ac-timeout=3600
 sleep-inactive-ac-type='nothing'
 sleep-inactive-battery-type='nothing'
@@ -441,24 +444,40 @@ sleep-inactive-battery-type='nothing'
 [org/gnome/settings-daemon/plugins/sharing/rygel]
 enabled-connections=['4dd7baa8-3248-4491-bd93-88d537b39f55']
 
-[org/gnome/settings-daemon/plugins/xsettings]
-hinting='slight'
-
 [org/gnome/shell]
-app-picker-layout=[{'software-properties-drivers.desktop': <{'position': <0>}>, 'sol.desktop': <{'position': <1>}>, 'atom_atom.desktop': <{'position': <2>}>, 'org.gnome.Calculator.desktop': <{'position': <3>}>, 'org.gnome.Calendar.desktop': <{'position': <4>}>, 'org.gnome.Cheese.desktop': <{'position': <5>}>, 'chrome-gbchcmhmhahfdphkhkmpfmihenigjmpp-Default.desktop': <{'position': <6>}>, 'chrome-haiffjcadagjlijoggckpgfnoeiflnem-Default.desktop': <{'position': <7>}>, 'simple-scan.desktop': <{'position': <8>}>, 'cmake-gui.desktop': <{'position': <9>}>, 'org.gnome.Evince.desktop': <{'position': <10>}>, 'dropbox.desktop': <{'position': <11>}>, 'org.gnome.Nautilus.desktop': <{'position': <12>}>, 'firefox.desktop': <{'position': <13>}>, 'goland_goland.desktop': <{'position': <14>}>, 'google-chrome.desktop': <{'position': <15>}>, 'gvim.desktop': <{'position': <16>}>, 'org.gnome.eog.desktop': <{'position': <17>}>, 'kitty.desktop': <{'position': <18>}>, 'gnome-language-selector.desktop': <{'position': <19>}>, 'libreoffice-calc.desktop': <{'position': <20>}>, 'libreoffice-draw.desktop': <{'position': <21>}>, 'libreoffice-impress.desktop': <{'position': <22>}>, 'libreoffice-writer.desktop': <{'position': <23>}>}, {'software-properties-livepatch.desktop': <{'position': <0>}>, 'org.gnome.Mahjongg.desktop': <{'position': <1>}>, 'org.gnome.Mines.desktop': <{'position': <2>}>, 'chrome-ndjpildffkeodjdaeebdhnncfhopkajk-Default.desktop': <{'position': <3>}>, 'org.gnome.seahorse.Application.desktop': <{'position': <4>}>, 'chrome-mjcnijlhddpbdemagnpefmlkjdagkogk-Default.desktop': <{'position': <5>}>, 'org.gnome.PowerStats.desktop': <{'position': <6>}>, 'org.remmina.Remmina.desktop': <{'position': <7>}>, 'rhythmbox.desktop': <{'position': <8>}>, 'gnome-control-center.desktop': <{'position': <9>}>, 'shotwell.desktop': <{'position': <10>}>, 'skype_skypeforlinux.desktop': <{'position': <11>}>, 'slack_slack.desktop': <{'position': <12>}>, 'software-properties-gtk.desktop': <{'position': <13>}>, 'update-manager.desktop': <{'position': <14>}>, 'spotify_spotify.desktop': <{'position': <15>}>, 'gnome-session-properties.desktop': <{'position': <16>}>, 'usb-creator-gtk.desktop': <{'position': <17>}>, 'org.gnome.Sudoku.desktop': <{'position': <18>}>, 'Sundry': <{'position': <19>}>, 'org.gnome.gedit.desktop': <{'position': <20>}>, 'thunderbird.desktop': <{'position': <21>}>, 'org.gnome.Todo.desktop': <{'position': <22>}>, 'transmission-gtk.desktop': <{'position': <23>}>}, {'snap-store_ubuntu-software.desktop': <{'position': <0>}>, 'Utilities': <{'position': <1>}>, 'org.gnome.Totem.desktop': <{'position': <2>}>, 'vim.desktop': <{'position': <3>}>, 'vlc_vlc.desktop': <{'position': <4>}>, 'xkeycaps.desktop': <{'position': <5>}>, 'chrome-hmbjbjdpkobdjplfobhljndfdfdipjhg-Default.desktop': <{'position': <6>}>}]
+app-picker-layout=[{'software-properties-drivers.desktop': <{'position': <0>}>, 'firmware-updater_firmware-updater.desktop': <{'position': <1>}>, 'org.gnome.clocks.desktop': <{'position': <2>}>, 'org.gnome.Calculator.desktop': <{'position': <3>}>, 'info.desktop': <{'position': <4>}>, 'org.gnome.TextEditor.desktop': <{'position': <5>}>, 'zoom-client_zoom-client.desktop': <{'position': <6>}>, 'gdebi.desktop': <{'position': <7>}>, 'org.gnome.Evince.desktop': <{'position': <8>}>, 'gvim.desktop': <{'position': <9>}>, 'org.gnome.eog.desktop': <{'position': <10>}>, 'gnome-language-selector.desktop': <{'position': <11>}>}, {'org.gnome.seahorse.Application.desktop': <{'position': <0>}>, 'org.gnome.PowerStats.desktop': <{'position': <1>}>, 'snap-store_snap-store.desktop': <{'position': <2>}>, 'firefox_firefox.desktop': <{'position': <3>}>, 'org.gnome.Settings.desktop': <{'position': <4>}>, 'code.desktop': <{'position': <5>}>, 'software-properties-gtk.desktop': <{'position': <6>}>, 'update-manager.desktop': <{'position': <7>}>, 'spotify_spotify.desktop': <{'position': <8>}>, 'gnome-session-properties.desktop': <{'position': <9>}>, 'Sundry': <{'position': <10>}>}, {'Utilities': <{'position': <0>}>, 'vim.desktop': <{'position': <1>}>, 'vlc_vlc.desktop': <{'position': <2>}>}]
 app-picker-view=uint32 0
-command-history=['chrome', 'gnome-session-properties']
+command-history=['chrome', 'gnome-session-properties', 'lg']
 disable-user-extensions=false
+disabled-extensions=['tiling-assistant@ubuntu.com', 'activate-window-by-title@lucaswerkmeister.de']
+enabled-extensions=['ding@rastersoft.com', 'ubuntu-dock@ubuntu.com', 'run-or-raise@edvard.cz']
 favorite-apps=['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'yelp.desktop', 'gnome-system-monitor.desktop', 'slack_slack.desktop', 'atom_atom.desktop', 'skype_skypeforlinux.desktop', 'goland_goland.desktop', 'thunderbird_thunderbird.desktop', 'org.kde.konsole.desktop']
 had-bluetooth-devices-setup=true
+last-selected-power-profile='power-saver'
+welcome-dialog-last-shown-version='45.0'
 
 [org/gnome/shell/extensions/dash-to-dock]
 dash-max-icon-size=24
 multi-monitor=false
 preferred-monitor=0
+show-mounts=false
+show-mounts-network=true
+show-mounts-only-mounted=false
+show-trash=false
+
+[org/gnome/shell/extensions/ding]
+check-x11wayland=true
+
+[org/gnome/shell/extensions/tiling-assistant]
+active-window-hint-color='rgb(211,70,21)'
+last-version-installed=44
+tiling-popup-all-workspace=true
 
 [org/gnome/shell/keybindings]
-toggle-application-view=['<Alt>space']
+toggle-application-view=@as []
+
+[org/gnome/shell/world-clocks]
+locations=@av []
 
 [org/gnome/software]
 check-timestamp=int64 1612737384
@@ -498,6 +517,10 @@ audible-bell=false
 font='Monospace 16'
 scrollback-lines=100000
 use-system-font=false
+
+[org/gtk/gtk4/settings/file-chooser]
+show-hidden=false
+sort-directories-first=true
 
 [org/gtk/settings/color-chooser]
 custom-colors=[(0.28627450980392155, 0.6588235294117647, 0.20784313725490197, 1.0)]
