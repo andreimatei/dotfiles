@@ -29,7 +29,7 @@ dconf load / < config/linux/dconf.backup
 
 ### App-launching shortcuts
 
-I'm using the [Run or riase](https://extensions.gnome.org/extension/1336/run-or-raise/) Gnome extension to set keyboard shortcuts for launching and switching to the windows of a couple of apps. The shortcuts are configured in `~/.config/run-or-raise`.
+I'm using the [Run or riase](https://extensions.gnome.org/extension/1336/run-or-raise/) Gnome extension to set keyboard shortcuts for launching and switching to the windows of a couple of apps. The shortcuts are configured in `~/.config/run-or-raise/shortcuts.conf`.
 
 ```
 <Super><Alt>Return,gnome-terminal,gnome-terminal-server,
