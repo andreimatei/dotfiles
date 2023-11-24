@@ -29,16 +29,21 @@ dconf load / < config/linux/dconf.backup
 
 ### App-launching shortcuts
 
+I'm using the [Run or riase](https://extensions.gnome.org/extension/1336/run-or-raise/) Gnome extension to set keyboard shortcuts for launching and switching to the windows of a couple of apps. The shortcuts are configured in `~/.config/run-or-raise`.
+
+```
+<Super><Alt>Return,gnome-terminal,gnome-terminal-server,
+<Super><Alt>c,google-chrome,google-chrome,
+<Super><Alt>s,slack,Slack,
+<Super><Alt>/,gvim,Gvim,
+<Super><Alt>a,atom,atom,
+<Super><Alt>x,code --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-features=WaylandWindowDecorations,Code,
+<Super><Alt>\,goland,jetbrains-goland,
+```
+
+Before using this extension, I was using the `dotfiles/scripts/win_focus.sh` script, but at first it didn't work for Wayland apps, and then on Ubuntu 23.10 I think it stopped workling altogether because `wmctrl -l` doesn't seem to work any more.
 These are part of the dconf backup. They are also accessible in the Settings UI under Keyboard Shortcuts -> Custom Shortcuts.
-
-- Launch/focus on Chrome: `Super+Alt+C` - `~/dotfiles/scripts/win_focus.sh chrome /opt/google/chrome/chrome`
-- Launch/focus on Konsole: `Super+Alt+Enter` - `~/dotfiles/scripts/win_focus.sh konsole konsole`
-- Focus on Goland: `Super+Alt+\` - `~/dotfiles/scripts/win_focus.sh Goland`
-- Focus on Gvim: `Super+Alt+/` - `~/dotfiles/scripts/win_focus.sh Gvim`
-- Launch/focus on Slack: `Super+Alt+Enter` - `~/dotfiles/scripts/win_focus.sh Slack slack`
-- Launch/focus on Atom: `Super+Alt+a` - `~/dotfiles/scripts/win_focus.sh Atom atom`
-
-On Ubuntu 23.04 some of these shortcuts broke - e.g. the one for Konsole. `wmctrl -l` doesn't list all the windows any more; perhaps it broke because Konsole was transitioned from X to Wayland. I've found [this Gnome extention](https://extensions.gnome.org/extension/5021/activate-window-by-title/) which works, so I've transitioned some of the commands to use it.
+I also played with [this other Gnome extention](https://extensions.gnome.org/extension/5021/activate-window-by-title/) but it's not as good as Run or Raise.
 
 ### Custom key map for Dell XPS laptop
 
