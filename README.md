@@ -32,13 +32,14 @@ dconf load / < config/linux/dconf.backup
 I'm using the [Run or raise](https://extensions.gnome.org/extension/1336/run-or-raise/) Gnome extension to set keyboard shortcuts for launching and switching to the windows of a couple of apps. The shortcuts are configured in `~/.config/run-or-raise/shortcuts.conf`.
 
 ```
-<Super><Alt>Return,gnome-terminal,gnome-terminal-server,
+<Super><Alt>Return,org.kde.konsole,konsole,
 <Super><Alt>c,google-chrome,google-chrome,
 <Super><Alt>s,slack,Slack,
-<Super><Alt>/,gvim,Gvim,
+<Super><Alt>slash,gvim,Gvim,
 <Super><Alt>a,atom,atom,
 <Super><Alt>x,code --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-features=WaylandWindowDecorations,Code,
-<Super><Alt>\,goland,jetbrains-goland,
+<Super><Alt>bracketright,code --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-features=WaylandWindowDecorations,code-url-handler,
+<Super><Alt>backslash,goland,jetbrains-goland,
 ```
 
 Before using this extension, I was using the `dotfiles/scripts/win_focus.sh` script, but at first it didn't work for Wayland apps, and then on Ubuntu 23.10 I think it stopped workling altogether because `wmctrl -l` doesn't seem to work any more.
