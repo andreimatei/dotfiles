@@ -43,7 +43,9 @@ I'm using the [Run or raise](https://extensions.gnome.org/extension/1336/run-or-
 
 Before using this extension, I was using the `dotfiles/scripts/win_focus.sh` script, but at first it didn't work for Wayland apps, and then on Ubuntu 23.10 I think it stopped workling altogether because `wmctrl -l` doesn't seem to work any more.
 These are part of the dconf backup. They are also accessible in the Settings UI under Keyboard Shortcuts -> Custom Shortcuts.
-I also played with [this other Gnome extention](https://extensions.gnome.org/extension/5021/activate-window-by-title/) but it's not as good as Run or Raise.
+I also played with [this other Gnome extention - Activate Window By Title](https://extensions.gnome.org/extension/5021/activate-window-by-title/) but it's not as good as Run or Raise.
+
+To discover the wm_class for windows to use with Run or Raise shortcuts, I do `alt-f2 -> lg -> windows` to get info on all current windows. To get the "keysym" for a key to use with a shortcut, [here's the list](https://wiki.linuxquestions.org/wiki/List_of_keysyms).
 
 ### Custom key map for Dell XPS laptop
 
