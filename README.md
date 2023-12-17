@@ -65,7 +65,7 @@ I have exported all the shortcuts in `extra/shortkeys-export.txt`.
 
 For `Ctrl+D`, which normally boomarks the page, dealing with the like with `Ctrl+Shift+C` didn't work. But this works - https://stackoverflow.com/a/49726633.
 
-To enable touchpad gestures for back/forth, I did this: https://www.reddit.com/r/gnome/comments/td8irt/touchpad_gestures_in_chromechromium/
+To enable touchpad gestures for back/forth, I did this: https://www.reddit.com/r/gnome/comments/td8irt/touchpad_gestures_in_chromechromium/ . Editing the desktop file seems to need a logout for it to kick in. Also notice that there's multiple `Exec` lines in that file.
 
 # Framework laptop
 
@@ -73,3 +73,4 @@ The screen resolution on the Framework is high, so I want to use "fractional sca
 - Chrome: go to chrome://flags and switch `Preferred Ozone platform` from `Default` to `auto`.
 - VS Code: it needs to be started with `--enable-features=UseOzonePlatform --ozone-platform=wayland --enable-features=WaylandWindowDecorations`. To add these args to the link in the dock, I edited `/usr/share/applications/code.desktop`.
 
+I did the `rtc_cmos.use_acpi_alarm=1` thing in the hope of draining the battery less when the laptop is suspended, according to this thread: https://community.frame.work/t/resolved-systemd-suspend-then-hibernate-wakes-up-after-5-minutes/39392 . I think it won't be needed in a newer kernel.
