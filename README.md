@@ -61,7 +61,9 @@ To load it on startup, I've added a startup app with
 I use [Shortkeys](https://chrome.google.com/webstore/detail/shortkeys-custom-keyboard/logpjaacgmcbpdkdchjiaagddngobkck) to configure tab next/prev shortcuts and to remap ctrl+shift+c from opening Dev Tools to copy to clipboard.
 The tab shortcuts are configured from [chrome://extensions/shortcuts](chrome://extensions/shortcuts).  
 `Ctrl+Shift+c` is configured as described [here](https://askubuntu.com/questions/604434/chrome-disable-or-change-keyboard-shortcut-ctrlshiftc-developer-tools-console/991632#991632?newreg=9711ffc8ba2b4e349e87efa4b2fd3542).
-I have exported all the shortcuts in `extra/shortkeys-export.txt`
+I have exported all the shortcuts in `extra/shortkeys-export.txt`.
+
+For `Ctrl+D`, which normally boomarks the page, dealing with the like with `Ctrl+Shift+C` didn't work. But this works - https://stackoverflow.com/a/49726633. 
 
 # Framework laptop
 
