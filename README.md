@@ -74,3 +74,9 @@ The screen resolution on the Framework is high, so I want to use "fractional sca
 - VS Code: it needs to be started with `--enable-features=UseOzonePlatform --ozone-platform=wayland --enable-features=WaylandWindowDecorations`. To add these args to the link in the dock, I edited `/usr/share/applications/code.desktop`.
 
 I did the `rtc_cmos.use_acpi_alarm=1` thing in the hope of draining the battery less when the laptop is suspended, according to this thread: https://community.frame.work/t/resolved-systemd-suspend-then-hibernate-wakes-up-after-5-minutes/39392 . I think it won't be needed in a newer kernel.
+
+# Goland editor
+
+### Window management
+
+- "Open in opposite group" / "Move to opposite group" - `Alt + Shift + ]` / `Alt + ]` 
