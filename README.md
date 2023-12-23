@@ -79,4 +79,8 @@ I did the `rtc_cmos.use_acpi_alarm=1` thing in the hope of draining the battery 
 
 ### Window management
 
-- "Open in opposite group" / "Move to opposite group" - `Alt + Shift + ]` / `Alt + ]` 
+- "Open in opposite group" / "Move to opposite group" - `Alt + Shift + ]` / `Alt + ]`
+
+### Misc
+
+- Conflicts between ideavim keyboard shortcuts and Goland shortcuts: you can choose which one wins from Settings->Vim
