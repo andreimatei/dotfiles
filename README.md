@@ -75,6 +75,8 @@ The screen resolution on the Framework is high, so I want to use "fractional sca
 
 I did the `rtc_cmos.use_acpi_alarm=1` thing in the hope of draining the battery less when the laptop is suspended, according to this thread: https://community.frame.work/t/resolved-systemd-suspend-then-hibernate-wakes-up-after-5-minutes/39392 . I think it won't be needed in a newer kernel.
 
+To have the sound work better, I use `EasyEffects` and the preset file linked [here](https://community.frame.work/t/how-can-i-tell-if-my-framework-13-amd-has-the-80db-speakers/45123/5?u=andrei_matei).
+
 # Goland editor
 
 ### Window management
